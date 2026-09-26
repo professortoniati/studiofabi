@@ -1,0 +1,1443 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Studio Fabi | Salão de Cabeleireiro em São Paulo</title>
+  <meta name="description"
+    content="Studio Fabi — Salão de Cabeleireiro em Jardim Promissão, São Paulo. Escova, progressiva, botox capilar, restauração, cauterização, hidratação e tratamentos para seus cabelos.">
+  <meta name="keywords"
+    content="Studio Fabi, salão de cabeleireiro, salão de beleza, cabeleireiro em São Paulo, Jardim Promissão, escova, progressiva, botox capilar, hidratação, cauterização, restauração capilar">
+  <meta property="og:title" content="Studio Fabi | Salão de Cabeleireiro em São Paulo">
+  <meta property="og:description"
+    content="Studio Fabi — Salão de Cabeleireiro em Jardim Promissão, São Paulo. Escova, progressiva, botox capilar, restauração, cauterização, hidratação e tratamentos para seus cabelos.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:image" content="assets/hero-salao.jpg">
+  <meta name="robots" content="index, follow">
+
+  <!-- Favicon com o logo -->
+  <link rel="icon" type="image/jpeg" href="assets/logo.jpg">
+
+  <!-- Google Fonts: Cormorant Garamond & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'studio-purple': '#A13A9F',
+            'studio-purple-dark': '#762875',
+            'studio-purple-deep': '#542052',
+            'studio-purple-light': '#C66BC2',
+            'studio-lilac': '#E7C8E5',
+            'studio-magenta': '#B84CAF',
+            'studio-pink': '#F3DDF1',
+            'studio-black': '#171217',
+            'studio-gray-dark': '#383238',
+            'studio-gray': '#706970',
+            'studio-gray-light': '#E8E4E8',
+            'studio-offwhite': '#FAF8FA',
+            'studio-gold': '#C9A96E',
+            'studio-whatsapp': '#25D366',
+          },
+          fontFamily: {
+            'serif': ['Cormorant Garamond', 'Georgia', 'serif'],
+            'sans': ['Inter', 'system-ui', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Schema.org JSON-LD LocalBusiness / BeautySalon -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BeautySalon",
+    "name": "Studio Fabi",
+    "image": "assets/hero-salao.jpg",
+    "logo": "assets/logo.jpg",
+    "description": "Salão de Cabeleireiro em Jardim Promissão, São Paulo. Escova, progressiva, botox capilar, restauração, cauterização, hidratação e tratamentos para seus cabelos.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "R. Eng. Francisco Pitta Brito, 453",
+      "addressLocality": "São Paulo",
+      "addressRegion": "SP",
+      "postalCode": "04753-080",
+      "addressCountry": "BR"
+    },
+    "telephone": "+5511969239889",
+    "openingHours": "Mo-Sa 09:00-18:00",
+    "priceRange": "$$",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "reviewCount": "41"
+    }
+  }
+  </script>
+
+  <!-- Estilos Customizados Externos -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!-- Barra de Progresso de Leitura Superior -->
+  <div id="scrollProgressBar" class="scroll-progress-bar"></div>
+
+  <!-- ================================================== -->
+  <!-- 1. HEADER / NAVBAR                                 -->
+  <!-- ================================================== -->
+  <header class="header" id="header" role="banner">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <!-- Logo Oficial Studio Fabi -->
+        <a href="#inicio" class="flex-shrink-0 flex items-center gap-3 group"
+          aria-label="Studio Fabi - Ir para o início">
+          <img src="assets/logo.jpg" alt="Logo Studio Fabi - Salão de Cabeleireiro"
+            class="h-12 sm:h-14 w-auto object-contain transition-transform duration-300 group-hover:scale-105">
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden lg:flex items-center gap-9" aria-label="Navegação principal">
+          <a href="#inicio" class="nav-link active" data-section="inicio">Início</a>
+          <a href="#sobre" class="nav-link" data-section="sobre">Sobre</a>
+          <a href="#servicos" class="nav-link" data-section="servicos">Serviços</a>
+          <a href="#diferenciais" class="nav-link" data-section="diferenciais">Diferenciais</a>
+          <a href="#depoimentos" class="nav-link" data-section="depoimentos">Depoimentos</a>
+          <a href="#localizacao" class="nav-link" data-section="localizacao">Onde Estamos</a>
+          <a href="#contato" class="nav-link" data-section="contato">Contato</a>
+
+          <a href="https://wa.me/5511969239889?text=Ol%C3%A1%2C%20Studio%20Fabi!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio."
+            class="btn-whatsapp-nav btn-shimmer" target="_blank" rel="noopener noreferrer"
+            aria-label="Agendar pelo WhatsApp">
+            <i data-lucide="message-circle" class="w-4 h-4"></i>
+            Agendar Horário
+          </a>
+        </nav>
+
+        <!-- Mobile Hamburger Button -->
+        <button
+          class="lg:hidden p-2.5 rounded-xl bg-studio-pink/60 hover:bg-studio-pink transition-colors focus:outline-none focus:ring-2 focus:ring-studio-purple"
+          id="menuToggle" aria-label="Abrir menu de navegação" aria-expanded="false">
+          <i data-lucide="menu" class="w-6 h-6 text-studio-purple"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Overlay -->
+  <div class="mobile-overlay" id="mobileOverlay" aria-hidden="true"></div>
+
+  <!-- Mobile Menu Drawer -->
+  <nav class="mobile-menu" id="mobileMenu" role="navigation" aria-label="Menu móvel">
+    <div class="flex items-center justify-between pb-6 border-b border-studio-gray-light">
+      <img src="assets/logo.jpg" alt="Studio Fabi" class="h-10 object-contain">
+      <button id="menuClose" class="p-2 rounded-lg hover:bg-studio-pink transition-colors" aria-label="Fechar menu">
+        <i data-lucide="x" class="w-6 h-6 text-studio-purple"></i>
+      </button>
+    </div>
+
+    <div class="flex flex-col py-6 space-y-1">
+      <a href="#inicio"
+        class="py-3 px-3 rounded-lg text-studio-black hover:text-studio-purple hover:bg-studio-pink/40 font-medium transition-colors"
+        data-mobile-link>Início</a>
+      <a href="#sobre"
+        class="py-3 px-3 rounded-lg text-studio-black hover:text-studio-purple hover:bg-studio-pink/40 font-medium transition-colors"
+        data-mobile-link>Sobre Nós</a>
+      <a href="#servicos"
+        class="py-3 px-3 rounded-lg text-studio-black hover:text-studio-purple hover:bg-studio-pink/40 font-medium transition-colors"
+        data-mobile-link>Nossos Serviços</a>
+      <a href="#diferenciais"
+        class="py-3 px-3 rounded-lg text-studio-black hover:text-studio-purple hover:bg-studio-pink/40 font-medium transition-colors"
+        data-mobile-link>Diferenciais</a>
+      <a href="#depoimentos"
+        class="py-3 px-3 rounded-lg text-studio-black hover:text-studio-purple hover:bg-studio-pink/40 font-medium transition-colors"
+        data-mobile-link>Avaliações</a>
+      <a href="#localizacao"
+        class="py-3 px-3 rounded-lg text-studio-black hover:text-studio-purple hover:bg-studio-pink/40 font-medium transition-colors"
+        data-mobile-link>Localização</a>
+      <a href="#contato"
+        class="py-3 px-3 rounded-lg text-studio-black hover:text-studio-purple hover:bg-studio-pink/40 font-medium transition-colors"
+        data-mobile-link>Contato</a>
+    </div>
+
+    <div class="mt-auto pt-6 border-t border-studio-gray-light">
+      <a href="https://wa.me/5511969239889?text=Ol%C3%A1%2C%20Studio%20Fabi!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio."
+        class="btn-whatsapp-nav w-full justify-center text-sm py-3.5" target="_blank" rel="noopener noreferrer">
+        <i data-lucide="message-circle" class="w-5 h-5"></i>
+        Agendar pelo WhatsApp
+      </a>
+      <p class="text-xs text-studio-gray text-center mt-3">R. Eng. Francisco Pitta Brito, 453 - Santo Amaro</p>
+    </div>
+  </nav>
+
+  <main>
+    <!-- ================================================== -->
+    <!-- 2. HERO SECTION                                    -->
+    <!-- ================================================== -->
+    <section class="relative min-h-[92vh] flex items-center overflow-hidden pt-24 pb-16 lg:py-32" id="inicio"
+      aria-labelledby="hero-heading">
+      <!-- Background Shapes Translúcidas com Blur Suave -->
+      <div
+        class="absolute -top-24 -right-24 w-96 h-96 bg-studio-lilac/35 rounded-full filter blur-3xl pointer-events-none animate-float-slow">
+      </div>
+      <div
+        class="absolute bottom-10 -left-20 w-80 h-80 bg-studio-pink/60 rounded-full filter blur-3xl pointer-events-none animate-float-slower">
+      </div>
+      <div
+        class="absolute top-1/2 left-1/3 w-64 h-64 bg-studio-purple-light/15 rounded-full filter blur-2xl pointer-events-none">
+      </div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+        <div class="grid lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+
+          <!-- Coluna Textual do Hero (7 cols) -->
+          <div class="lg:col-span-7 text-center lg:text-left">
+            <!-- Badge Google Reviews -->
+            <div
+              class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white border border-studio-lilac/60 shadow-sm mb-6 reveal">
+              <div class="flex text-studio-gold">
+                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              </div>
+              <span class="text-xs font-semibold text-studio-gray-dark">
+                <span class="text-studio-black font-bold" data-counter="4.8" data-decimals="1">4,8</span> / 5 no Google (<span data-counter="41">41</span> avaliações)
+              </span>
+            </div>
+
+            <!-- Subtitle Oficial -->
+            <p
+              class="text-xs sm:text-sm font-semibold tracking-widest text-studio-purple uppercase mb-3 reveal delay-100">
+              Studio Fabi — Salão de Cabeleireiro
+            </p>
+
+            <!-- Headline Principal com Tipografia Elegante -->
+            <h1 id="hero-heading"
+              class="font-heading text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-studio-black leading-[1.08] mb-6 reveal delay-200">
+              Beleza, cuidado e autoestima <br class="hidden sm:inline">
+              <span class="text-gradient">em cada detalhe.</span>
+            </h1>
+
+            <!-- Texto Complementar -->
+            <p
+              class="text-base sm:text-lg lg:text-xl text-studio-gray max-w-xl mx-auto lg:mx-0 leading-relaxed mb-8 reveal delay-300">
+              Cuidados profissionais para deixar seus cabelos mais bonitos, saudáveis e cheios de vida em um ambiente
+              acolhedor e higienizado.
+            </p>
+
+            <!-- CTAs Principais -->
+            <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center reveal delay-400">
+              <a href="https://wa.me/5511969239889?text=Ol%C3%A1%2C%20Studio%20Fabi!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio."
+                class="btn-primary btn-shimmer w-full sm:w-auto justify-center text-base" target="_blank"
+                rel="noopener noreferrer">
+                <i data-lucide="message-circle" class="w-5 h-5 text-studio-whatsapp"></i>
+                Agendar pelo WhatsApp
+              </a>
+              <a href="#servicos" class="btn-secondary w-full sm:w-auto justify-center text-base">
+                <i data-lucide="sparkles" class="w-5 h-5 text-studio-purple"></i>
+                Conhecer nossos serviços
+              </a>
+            </div>
+
+            <!-- Micro diferenciais rápidos -->
+            <div
+              class="grid grid-cols-3 gap-3 sm:gap-6 mt-10 pt-8 border-t border-studio-gray-light/60 max-w-lg mx-auto lg:mx-0 reveal delay-500">
+              <div class="flex items-center gap-2.5">
+                <div
+                  class="w-8 h-8 rounded-full bg-studio-pink flex items-center justify-center flex-shrink-0 text-studio-purple">
+                  <i data-lucide="sparkles" class="w-4 h-4"></i>
+                </div>
+                <span class="text-xs font-medium text-studio-gray-dark">Linha Olenka</span>
+              </div>
+              <div class="flex items-center gap-2.5">
+                <div
+                  class="w-8 h-8 rounded-full bg-studio-pink flex items-center justify-center flex-shrink-0 text-studio-purple">
+                  <i data-lucide="shield-check" class="w-4 h-4"></i>
+                </div>
+                <span class="text-xs font-medium text-studio-gray-dark">100% Higienizado</span>
+              </div>
+              <div class="flex items-center gap-2.5">
+                <div
+                  class="w-8 h-8 rounded-full bg-studio-pink flex items-center justify-center flex-shrink-0 text-studio-purple">
+                  <i data-lucide="heart" class="w-4 h-4"></i>
+                </div>
+                <span class="text-xs font-medium text-studio-gray-dark">+8 Anos em SP</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Coluna Visual / Composição Fotográfica Interativa (5 cols) -->
+          <div class="lg:col-span-5 relative flex justify-center reveal-right delay-200">
+            <div class="relative w-full max-w-md lg:max-w-none hero-interactive-container cursor-pointer select-none" id="heroInteractiveContainer">
+
+              <!-- Aura Colorida Dinâmica de Fundo -->
+              <div class="hero-aura-glow" id="heroAuraGlow"></div>
+
+              <!-- Moldura Principal com Imagem do Salão e Efeito Tilt 3D -->
+              <div
+                class="relative z-10 rounded-3xl overflow-hidden shadow-2xl border-4 border-white aspect-[4/5] sm:aspect-[4/4.8] hero-tilt-image"
+                id="heroTiltImage">
+                <img src="assets/hero-salao.jpg" alt="Ambiente aconchegante e cliente satisfeita no Studio Fabi"
+                  class="w-full h-full object-cover pointer-events-none">
+                <div class="absolute inset-0 bg-gradient-to-t from-studio-black/40 via-transparent to-transparent pointer-events-none">
+                </div>
+                <!-- Reflexo Dinâmico de Luz que acompanha o mouse -->
+                <div class="hero-glare" id="heroGlare"></div>
+              </div>
+
+              <!-- Card Flutuante Superior com Parallax: Logo Oficial -->
+              <div
+                class="absolute -top-6 -left-4 sm:-left-8 z-20 bg-white/95 backdrop-blur-md rounded-2xl p-3 sm:p-4 shadow-xl border border-studio-lilac/50 hero-floating-badge-top animate-float-slow"
+                id="heroBadgeTop">
+                <img src="assets/logo.jpg" alt="Studio Fabi" class="h-10 sm:h-12 w-auto object-contain pointer-events-none">
+              </div>
+
+              <!-- Card Flutuante Inferior com Parallax: Badge de Confiança -->
+              <div
+                class="absolute -bottom-6 -right-4 sm:-right-6 z-20 glass-card rounded-2xl p-4 shadow-2xl max-w-[220px] hero-floating-badge-bottom animate-float-slower"
+                id="heroBadgeBottom">
+                <div class="flex items-center gap-3 pointer-events-none">
+                  <div
+                    class="w-10 h-10 rounded-xl bg-gradient-to-br from-studio-purple to-studio-purple-light flex items-center justify-center text-white flex-shrink-0">
+                    <i data-lucide="award" class="w-5 h-5"></i>
+                  </div>
+                  <div>
+                    <p class="text-xs text-studio-gray font-medium">Reconhecimento</p>
+                    <p class="text-sm font-bold text-studio-black">Excelência em Cabelos</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================== -->
+    <!-- 3. SOBRE O STUDIO FABI                             -->
+    <!-- ================================================== -->
+    <section class="py-20 lg:py-28 bg-white relative overflow-hidden" id="sobre" aria-labelledby="sobre-heading">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <div class="grid lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+
+          <!-- Imagem Real da Fabi (5 cols) -->
+          <div class="lg:col-span-5 reveal-left">
+            <div class="relative max-w-sm mx-auto lg:max-w-none">
+
+              <!-- Moldura Artística e Foto da Fabi -->
+              <div class="fabi-frame">
+                <div class="relative z-10 rounded-3xl overflow-hidden shadow-2xl border-4 border-white aspect-[3/4]">
+                  <img src="assets/fabi-perfil.jpg" alt="Fabi — Fundadora e Cabeleireira do Studio Fabi"
+                    class="w-full h-full object-cover object-top" loading="lazy">
+                  <div class="absolute inset-0 bg-gradient-to-t from-studio-black/60 via-transparent to-transparent">
+                  </div>
+
+                  <!-- Tag de Identificação na Foto -->
+                  <div class="absolute bottom-6 left-6 right-6 text-white">
+                    <span class="text-xs font-semibold uppercase tracking-wider text-studio-lilac">Fundadora &
+                      Cabeleireira</span>
+                    <h3 class="font-heading text-2xl font-bold">Fabiola</h3>
+                    <p class="text-xs text-studio-pink/90">Mais de 8 anos transformando e recuperando cabelos</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Badge Flutuante de Cuidado -->
+              <div
+                class="absolute -bottom-5 -left-4 sm:-left-6 z-20 bg-white rounded-2xl p-4 shadow-xl border border-studio-lilac flex items-center gap-3">
+                <div
+                  class="w-10 h-10 rounded-full bg-studio-pink flex items-center justify-center text-studio-purple flex-shrink-0">
+                  <i data-lucide="scissors" class="w-5 h-5"></i>
+                </div>
+                <div>
+                  <p class="text-xs text-studio-gray font-medium">Dedicação & Arte</p>
+                  <p class="text-sm font-bold text-studio-black">Cuidado em cada mecha</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Textos e Valores da Seção Sobre (7 cols) -->
+          <div class="lg:col-span-7">
+            <span class="inline-block text-xs font-semibold tracking-widest text-studio-purple uppercase mb-3 reveal">
+              Conheça Nossa História & Espaço
+            </span>
+            <h2 id="sobre-heading"
+              class="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold text-studio-black mb-6 reveal delay-100">
+              Um espaço acolhedor para cuidar dos seus cabelos e da sua <span class="text-gradient">autoestima.</span>
+            </h2>
+
+            <p class="text-base sm:text-lg text-studio-gray-dark leading-relaxed mb-6 reveal delay-200">
+              Com atendimento atencioso e foco absoluto na qualidade dos serviços, o <strong>Studio Fabi</strong>
+              oferece tratamentos para diferentes necessidades dos cabelos, desde cuidados básicos até procedimentos de
+              transformação e recuperação intensiva dos fios.
+            </p>
+
+            <p class="text-sm sm:text-base text-studio-gray leading-relaxed mb-8 reveal delay-300">
+              Localizado em Santo Amaro / Jardim Promissão, nosso ambiente foi planejado para proporcionar bem-estar,
+              biossegurança e resultados que superam expectativas — aliando técnicas consagradas, produtos premium e
+              carinho no atendimento.
+            </p>
+
+            <!-- Grid de Destaques Rápidos -->
+            <div class="grid sm:grid-cols-2 gap-4 mb-8">
+              <div
+                class="flex items-start gap-3 p-3.5 rounded-xl bg-studio-offwhite border border-studio-lilac/30 reveal delay-100">
+                <div
+                  class="w-8 h-8 rounded-lg bg-studio-pink flex items-center justify-center text-studio-purple flex-shrink-0 mt-0.5">
+                  <i data-lucide="heart" class="w-4 h-4"></i>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-sm text-studio-black">Ambiente Acolhedor</h4>
+                  <p class="text-xs text-studio-gray">Espaço agradável, tranquilo e confortável para seu momento de
+                    beleza.</p>
+                </div>
+              </div>
+
+              <div
+                class="flex items-start gap-3 p-3.5 rounded-xl bg-studio-offwhite border border-studio-lilac/30 reveal delay-200">
+                <div
+                  class="w-8 h-8 rounded-lg bg-studio-pink flex items-center justify-center text-studio-purple flex-shrink-0 mt-0.5">
+                  <i data-lucide="shield-check" class="w-4 h-4"></i>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-sm text-studio-black">Higiene & Biossegurança</h4>
+                  <p class="text-xs text-studio-gray">Materiais descartáveis para unhas e esterilização rigorosa.</p>
+                </div>
+              </div>
+
+              <div
+                class="flex items-start gap-3 p-3.5 rounded-xl bg-studio-offwhite border border-studio-lilac/30 reveal delay-300">
+                <div
+                  class="w-8 h-8 rounded-lg bg-studio-pink flex items-center justify-center text-studio-purple flex-shrink-0 mt-0.5">
+                  <i data-lucide="tag" class="w-4 h-4"></i>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-sm text-studio-black">Preços Acessíveis</h4>
+                  <p class="text-xs text-studio-gray">Tratamentos profissionais com valores justos e que cabem no bolso.
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="flex items-start gap-3 p-3.5 rounded-xl bg-studio-offwhite border border-studio-lilac/30 reveal delay-400">
+                <div
+                  class="w-8 h-8 rounded-lg bg-studio-pink flex items-center justify-center text-studio-purple flex-shrink-0 mt-0.5">
+                  <i data-lucide="gift" class="w-4 h-4"></i>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-sm text-studio-black">Coleta de Cabelos</h4>
+                  <p class="text-xs text-studio-gray">Ponto oficial de coleta de mechas para doações solidárias.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="reveal delay-400">
+              <a href="https://wa.me/5511969239889?text=Ol%C3%A1%2C%20Studio%20Fabi!%20Gostaria%20de%20conversar%20sobre%20meu%20cabelo."
+                class="btn-primary" target="_blank" rel="noopener noreferrer">
+                <i data-lucide="message-circle" class="w-5 h-5"></i>
+                Falar com a Fabi no WhatsApp
+              </a>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================================================== -->
+    <!-- 4. SERVIÇOS DO STUDIO FABI                         -->
+    <!-- ================================================== -->
+    <section class="py-20 lg:py-28 bg-studio-offwhite relative" id="servicos" aria-labelledby="servicos-heading">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <!-- Header da Seção -->
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <span class="inline-block text-xs font-semibold tracking-widest text-studio-purple uppercase mb-3 reveal">
+            Procedimentos & Cuidados
+          </span>
+          <h2 id="servicos-heading"
+            class="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold text-studio-black mb-4 reveal delay-100">
+            Cuide dos seus cabelos <span class="text-gradient">com quem entende</span>
+          </h2>
+          <p class="text-base sm:text-lg text-studio-gray reveal delay-200">
+            Tratamentos pensados para diferentes tipos e necessidades dos seus fios, com avaliação capilar e produtos de
+            alta tecnologia.
+          </p>
+        </div>
+
+        <!-- Grid dos 7 Serviços com Fotos e Detalhes Completos -->
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-7">
+
+          <!-- SERVIÇO 1: ESCOVA -->
+          <div class="service-card reveal">
+            <div class="img-container">
+              <img src="assets/servico-escova.jpg" alt="Serviço de Escova no Studio Fabi" loading="lazy">
+              <span class="service-badge">Mais Pedido</span>
+            </div>
+            <div class="p-6 flex-1 flex flex-col">
+              <div class="flex items-center gap-2 mb-2 text-studio-purple">
+                <i data-lucide="wind" class="w-5 h-5"></i>
+                <span class="text-xs font-bold uppercase tracking-wider">Finalização</span>
+              </div>
+              <h3 class="font-heading text-2xl font-bold text-studio-black mb-2">Escova</h3>
+              <p class="text-sm text-studio-gray mb-4 leading-relaxed">
+                Para deixar os cabelos bonitos e saudáveis, com resultado profissional, movimento e toque sedoso.
+              </p>
+
+              <ul
+                class="space-y-2 mb-6 mt-auto text-xs text-studio-gray-dark border-t border-studio-gray-light/60 pt-4">
+                <li class="flex items-center gap-2">
+                  <i data-lucide="check-circle" class="w-4 h-4 text-studio-purple flex-shrink-0"></i>
+                  Produtos de alta qualidade
+                </li>
+                <li class="flex items-center gap-2">
+                  <i data-lucide="check-circle" class="w-4 h-4 text-studio-purple flex-shrink-0"></i>
+                  Avaliação e teste de mechas
+                </li>
+                <li class="flex items-center gap-2">
+                  <i data-lucide="check-circle" class="w-4 h-4 text-studio-purple flex-shrink-0"></i>
+                  Resultado profissional impecável
+                </li>
+              </ul>
+
+              <a href="https://wa.me/5511969239889?text=Ol%C3%A1%2C%20Studio%20Fabi!%20Gostaria%20de%20agendar%20o%20servi%C3%A7o%20de%20Escova."
+                class="inline-flex items-center justify-between w-full px-4 py-2.5 rounded-xl bg-studio-pink/40 hover:bg-studio-purple text-studio-purple hover:text-white font-semibold text-xs transition-all duration-300 group"
+                target="_blank" rel="noopener noreferrer">
+                <span>Agendar Escova</span>
+                <i data-lucide="arrow-right" class="w-4 h-4 transition-transform group-hover:translate-x-1"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- SERVIÇO 2: PROGRESSIVA -->
+          <div class="service-card reveal delay-100">
+            <div class="img-container">
+              <img src="assets/servico-progressiva.jpg" alt="Serviço de Escova Progressiva no Studio Fabi"
+                loading="lazy">
+              <span class="service-badge gold">Destaque Salão</span>
+            </div>
+            <div class="p-6 flex-1 flex flex-col">
+              <div class="flex items-center gap-2 mb-2 text-studio-purple">
+                <i data-lucide="sparkles" class="w-5 h-5"></i>
+                <span class="text-xs font-bold uppercase tracking-wider">Alinhamento</span>
+              </div>
+              <h3 class="font-heading text-2xl font-bold text-studio-black mb-1">Progressiva</h3>
+
+              <!-- Produto Oficial -->
+              <div
+                class="inline-block bg-studio-pink/70 text-studio-purple-dark text-[11px] font-semibold px-2.5 py-1 rounded-md mb-3 self-start">
+                Royal Look – Olenka Cosméticos
+              </div>
+
+              <p class="text-sm text-studio-gray mb-4 leading-relaxed">
+                Indicada para cabelos volumosos, indisciplinados e com frizz excessivo, proporcionando fios alinhados.
+              </p>
+
+              <ul
+                class="space-y-2 mb-6 mt-auto text-xs text-studio-gray-dark border-t border-studio-gray-light/60 pt-4">
+                <li class="flex items-center gap-2">
+                  <i data-lucide="check-circle" class="w-4 h-4 text-studio-purple flex-shrink-0"></i>
+                  Redução de frizz imediata
+                </li>
+                <li class="flex items-center gap-2">
+                  <i data-lucide="check-circle" class="w-4 h-4 text-studio-purple flex-shrink-0"></i>
+                  Alinhamento dos fios
+                </li>
+                <li class="flex items-center gap-2">
+                  <i data-lucide="check-circle" class="w-4 h-4 text-studio-purple flex-shrink-0"></i>
+                  Cabelos mais lisos e naturais
+                </li>
+              </ul>
+
+              <a href="https://wa.me/5511969239889?text=Ol%C3%A1%2C%20Studio%20Fabi!%20Gostaria%20de%20agendar%20o%20servi%C3%A7o%20de%20Progressiva."
+                class="inline-flex items-center justify-between w-full px-4 py-2.5 rounded-xl bg-studio-pink/40 hover:bg-studio-purple text-studio-purple hover:text-white font-semibold text-xs transition-all duration-300 group"
+                target="_blank" rel="noopener noreferrer">
+                <span>Agendar Progressiva</span>
+                <i data-lucide="arrow-right" class="w-4 h-4 transition-transform group-hover:translate-x-1"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- SERVIÇO 3: BOTOX CAPILAR -->
+          <div class="service-card reveal delay-200">
+            <div class="img-container">
+              <img src="assets/servico-botox.jpg" alt="Serviço de Botox Capilar no Studio Fabi" loading="lazy">
+              <span class="service-badge">Nutrição Profunda</span>
+            </div>
+            <div class="p-6 flex-1 flex flex-col">
+              <div class="flex items-center gap-2 mb-2 text-studio-purple">
+                <i data-lucide="droplets" class="w-5 h-5"></i>
+                <span class="text-xs font-bold uppercase tracking-wider">Tratamento</span>
+              </div>
+              <h3 class="font-heading text-2xl font-bold text-studio-black mb-1">Botox Capilar</h3>
+
+              <!-- Produto Oficial -->
+              <div
+                class="inline-block bg-studio-pink/70 text-studio-purple-dark text-[11px] font-semibold px-2.5 py-1 rounded-md mb-3 self-start">
+                Royal Soft – Olenka Cosméticos
+              </div>
+
+              <p class="text-sm text-studio-gray mb-4 leading-relaxed">
+                Tratamento indicado para cabelos ressecados, com frizz, sem brilho ou danificados por química anterior.
+              </p>
+
+              <ul
+                class="space-y-2 mb-6 mt-auto text-xs text-studio-gray-dark border-t border-studio-gray-light/60 pt-4">
+                <li class="flex items-center gap-2">
+                  <i data-lucide="check-circle" class="w-4 h-4 text-studio-purple flex-shrink-0"></i>
+                  Recuperação intensiva de brilho
+                </li>
+                <li class="flex items-center gap-2">
+                  <i data-lucide="check-circle" class="w-4 h-4 text-studio-purple flex-shrink-0"></i>
+                  Controle disciplinado do frizz
+                </li>
+                <li class="flex items-center gap-2">
+                  <i data-lucide="check-circle" class="w-4 h-4 text-studio-purple flex-shrink-0"></i>
+                  Reposição de massa e maciez
+                </li>
+              </ul>
+
+              <a href="https://wa.me/5511969239889?text=Ol%C3%A1%2C%20Studio%20Fabi!%20Gostaria%20de%20agendar%20o%20servi%C3%A7o%20de%20Botox%20Capilar."
+                class="inline-flex items-center justify-between w-full px-4 py-2.5 rounded-xl bg-studio-pink/40 hover:bg-studio-purple text-studio-purple hover:text-white font-semibold text-xs transition-all duration-300 group"
+                target="_blank" rel="noopener noreferrer">
+                <span>Agendar Botox Capilar</span>
+                <i data-lucide="arrow-right" class="w-4 h-4 transition-transform group-hover:translate-x-1"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- SERVIÇO 4: RESTAURAÇÃO CAPILAR -->
+          <div class="service-card reveal delay-300">
+            <div class="img-container">
+              <img src="assets/servico-restauracao.jpg" alt="Serviço de Restauração Capilar no Studio Fabi"
+                loading="lazy">
+              <span class="service-badge">SOS Fios</span>
+            </div>
+            <div class="p-6 flex-1 flex flex-col">
+              <div class="flex items-center gap-2 mb-2 text-studio-purple">
+                <i data-lucide="shield-plus" class="w-5 h-5"></i>
+                <span class="text-xs font-bold uppercase tracking-wider">Recuperação</span>
+              </div>
+              <h3 class="font-heading text-2xl font-bold text-studio-black mb-2">Restauração Capilar</h3>
+              <p class="text-sm text-studio-gray mb-4 leading-relaxed">
+                Tratamento indicado para cabelos danificados, quebradiços ou sensibilizados por química constante.
+              </p>
+
+              <ul
+                class="space-y-2 mb-6 mt-auto text-xs text-studio-gray-dark border-t border-studio-gray-light/60 pt-4">
+                <li class="flex items-center gap-2">
+                  <i data-lucide="check-circle" class="w-4 h-4 text-studio-purple flex-shrink-0"></i>
+                  Fortalece a fibra capilar
+                </li>
+                <li class="flex items-center gap-2">
+                  <i data-lucide="check-circle" class="w-4 h-4 text-studio-purple flex-shrink-0"></i>
+                  Recupera a resistência dos fios
+                </li>
+                <li class="flex items-center gap-2">
+                  <i data-lucide="check-circle" class="w-4 h-4 text-studio-purple flex-shrink-0"></i>
+                  Ajuda a reduzir a quebra capilar
+                </li>
+              </ul>
+
+              <a href="https://wa.me/5511969239889?text=Ol%C3%A1%2C%20Studio%20Fabi!%20Gostaria%20de%20agendar%20o%20servi%C3%A7o%20de%20Restaura%C3%A7%C3%A3o%20Capilar."
+                class="inline-flex items-center justify-between w-full px-4 py-2.5 rounded-xl bg-studio-pink/40 hover:bg-studio-purple text-studio-purple hover:text-white font-semibold text-xs transition-all duration-300 group"
+                target="_blank" rel="noopener noreferrer">
+                <span>Agendar Restauração</span>
+                <i data-lucide="arrow-right" class="w-4 h-4 transition-transform group-hover:translate-x-1"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- SERVIÇO 5: BANHO DE COLÁGENO -->
+          <div class="service-card reveal">
+            <div class="img-container">
+              <img src="assets/servico-colageno.jpg" alt="Serviço de Banho de Colágeno no Studio Fabi" loading="lazy">
+              <span class="service-badge gold">Brilho Espelhado</span>
+            </div>
+            <div class="p-6 flex-1 flex flex-col">
+              <div class="flex items-center gap-2 mb-2 text-studio-purple">
+                <i data-lucide="sparkle" class="w-5 h-5"></i>
+                <span class="text-xs font-bold uppercase tracking-wider">Luminosidade</span>
+              </div>
+              <h3 class="font-heading text-2xl font-bold text-studio-black mb-2">Banho de Colágeno</h3>
+              <p class="text-sm text-studio-gray mb-4 leading-relaxed">
+                Indicado para cabelos finos, opacos, sem movimento ou sem vida, devolvendo balanço e radiância.
+              </p>
+
+              <ul
+                class="space-y-2 mb-6 mt-auto text-xs text-studio-gray-dark border-t border-studio-gray-light/60 pt-4">
+                <li class="flex items-center gap-2">
+                  <i data-lucide="check-circle" class="w-4 h-4 text-studio-purple flex-shrink-0"></i>
+                  Mais alinhamento e leveza
+                </li>
+                <li class="flex items-center gap-2">
+                  <i data-lucide="check-circle" class="w-4 h-4 text-studio-purple flex-shrink-0"></i>
+                  Brilho espelhado deslumbrante
+                </li>
+                <li class="flex items-center gap-2">
+                  <i data-lucide="check-circle" class="w-4 h-4 text-studio-purple flex-shrink-0"></i>
+                  Fios sedosos, leves e com vida
+                </li>
+              </ul>
+
+              <a href="https://wa.me/5511969239889?text=Ol%C3%A1%2C%20Studio%20Fabi!%20Gostaria%20de%20agendar%20o%20servi%C3%A7o%20de%20Banho%20de%20Col%C3%A1geno."
+                class="inline-flex items-center justify-between w-full px-4 py-2.5 rounded-xl bg-studio-pink/40 hover:bg-studio-purple text-studio-purple hover:text-white font-semibold text-xs transition-all duration-300 group"
+                target="_blank" rel="noopener noreferrer">
+                <span>Agendar Banho de Colágeno</span>
+                <i data-lucide="arrow-right" class="w-4 h-4 transition-transform group-hover:translate-x-1"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- SERVIÇO 6: CAUTERIZAÇÃO -->
+          <div class="service-card reveal delay-100">
+            <div class="img-container">
+              <img src="assets/servico-cauterizacao.jpg" alt="Serviço de Cauterização no Studio Fabi" loading="lazy">
+              <span class="service-badge">Reconstrução</span>
+            </div>
+            <div class="p-6 flex-1 flex flex-col">
+              <div class="flex items-center gap-2 mb-2 text-studio-purple">
+                <i data-lucide="zap" class="w-5 h-5"></i>
+                <span class="text-xs font-bold uppercase tracking-wider">Tratamento Térmico</span>
+              </div>
+              <h3 class="font-heading text-2xl font-bold text-studio-black mb-2">Cauterização</h3>
+              <p class="text-sm text-studio-gray mb-4 leading-relaxed">
+                Tratamento profundo com queratina concentrada, indicado para cabelos extremamente danificados.
+              </p>
+
+              <ul
+                class="space-y-2 mb-6 mt-auto text-xs text-studio-gray-dark border-t border-studio-gray-light/60 pt-4">
+                <li class="flex items-center gap-2">
+                  <i data-lucide="check-circle" class="w-4 h-4 text-studio-purple flex-shrink-0"></i>
+                  Tratamento profundo com queratina
+                </li>
+                <li class="flex items-center gap-2">
+                  <i data-lucide="check-circle" class="w-4 h-4 text-studio-purple flex-shrink-0"></i>
+                  Reconstrução intensiva da fibra capilar
+                </li>
+                <li class="flex items-center gap-2">
+                  <i data-lucide="check-circle" class="w-4 h-4 text-studio-purple flex-shrink-0"></i>
+                  Camada protetora sobre o fio
+                </li>
+              </ul>
+
+              <a href="https://wa.me/5511969239889?text=Ol%C3%A1%2C%20Studio%20Fabi!%20Gostaria%20de%20agendar%20o%20servi%C3%A7o%20de%20Cauteriza%C3%A7%C3%A3o."
+                class="inline-flex items-center justify-between w-full px-4 py-2.5 rounded-xl bg-studio-pink/40 hover:bg-studio-purple text-studio-purple hover:text-white font-semibold text-xs transition-all duration-300 group"
+                target="_blank" rel="noopener noreferrer">
+                <span>Agendar Cauterização</span>
+                <i data-lucide="arrow-right" class="w-4 h-4 transition-transform group-hover:translate-x-1"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- SERVIÇO 7: HIDRATAÇÃO -->
+          <div class="service-card reveal delay-200">
+            <div class="img-container">
+              <img src="assets/servico-hidratacao.jpg" alt="Serviço de Hidratação no Studio Fabi" loading="lazy">
+              <span class="service-badge">Água & Maciez</span>
+            </div>
+            <div class="p-6 flex-1 flex flex-col">
+              <div class="flex items-center gap-2 mb-2 text-studio-purple">
+                <i data-lucide="droplet" class="w-5 h-5"></i>
+                <span class="text-xs font-bold uppercase tracking-wider">Cuidado Essencial</span>
+              </div>
+              <h3 class="font-heading text-2xl font-bold text-studio-black mb-2">Hidratação</h3>
+              <p class="text-sm text-studio-gray mb-4 leading-relaxed">
+                Indicada para cabelos ressecados, opacos e ásperos ao toque, restaurando a umidade natural.
+              </p>
+
+              <ul
+                class="space-y-2 mb-6 mt-auto text-xs text-studio-gray-dark border-t border-studio-gray-light/60 pt-4">
+                <li class="flex items-center gap-2">
+                  <i data-lucide="check-circle" class="w-4 h-4 text-studio-purple flex-shrink-0"></i>
+                  Repõe água nos fios ressecados
+                </li>
+                <li class="flex items-center gap-2">
+                  <i data-lucide="check-circle" class="w-4 h-4 text-studio-purple flex-shrink-0"></i>
+                  Devolve maciez e sedosidade
+                </li>
+                <li class="flex items-center gap-2">
+                  <i data-lucide="check-circle" class="w-4 h-4 text-studio-purple flex-shrink-0"></i>
+                  Proporciona leveza e desembaraço
+                </li>
+              </ul>
+
+              <a href="https://wa.me/5511969239889?text=Ol%C3%A1%2C%20Studio%20Fabi!%20Gostaria%20de%20agendar%20o%20servi%C3%A7o%20de%20Hidrata%C3%A7%C3%A3o."
+                class="inline-flex items-center justify-between w-full px-4 py-2.5 rounded-xl bg-studio-pink/40 hover:bg-studio-purple text-studio-purple hover:text-white font-semibold text-xs transition-all duration-300 group"
+                target="_blank" rel="noopener noreferrer">
+                <span>Agendar Hidratação</span>
+                <i data-lucide="arrow-right" class="w-4 h-4 transition-transform group-hover:translate-x-1"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- CARD EXTRA INFORMATIVO: ATENDIMENTO PERSONALIZADO -->
+          <div
+            class="service-card bg-gradient-to-br from-studio-purple-dark via-studio-purple to-studio-purple-light text-white p-6 justify-between border-none reveal delay-300">
+            <div>
+              <div
+                class="w-12 h-12 rounded-2xl bg-white/20 backdrop-blur-md flex items-center justify-center text-white mb-6">
+                <i data-lucide="calendar" class="w-6 h-6"></i>
+              </div>
+              <h3 class="font-heading text-2xl sm:text-3xl font-bold mb-3 leading-snug">
+                Dúvidas sobre o tratamento ideal?
+              </h3>
+              <p class="text-sm text-white/90 leading-relaxed mb-6">
+                A Fabi realiza avaliação e teste de mechas para indicar com precisão o que seu cabelo mais precisa.
+              </p>
+            </div>
+
+            <a href="https://wa.me/5511969239889?text=Ol%C3%A1%2C%20Studio%20Fabi!%20Gostaria%20de%20uma%20avalia%C3%A7%C3%A3o%20para%20o%20meu%20cabelo."
+              class="inline-flex items-center justify-center gap-2 w-full py-3.5 px-4 rounded-xl bg-white text-studio-purple font-bold text-sm hover:bg-studio-offwhite transition-all shadow-lg hover:shadow-xl"
+              target="_blank" rel="noopener noreferrer">
+              <i data-lucide="message-circle" class="w-4 h-4 text-studio-whatsapp"></i>
+              Fazer Avaliação no WhatsApp
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================================================== -->
+    <!-- 5. DIFERENCIAIS                                    -->
+    <!-- ================================================== -->
+    <section class="py-20 lg:py-28 bg-white relative" id="diferenciais" aria-labelledby="diferenciais-heading">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <span class="inline-block text-xs font-semibold tracking-widest text-studio-purple uppercase mb-3 reveal">
+            Nosso Compromisso
+          </span>
+          <h2 id="diferenciais-heading"
+            class="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold text-studio-black mb-4 reveal delay-100">
+            Um espaço <span class="text-gradient">pensado para você</span>
+          </h2>
+          <p class="text-base sm:text-lg text-studio-gray reveal delay-200">
+            Cada cuidado foi desenhado para que você se sinta acolhida, segura e plenamente satisfeita com seus
+            resultados.
+          </p>
+        </div>
+
+        <!-- Grid dos 7 diferenciais oficiais do SPEC -->
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 sm:gap-6">
+
+          <div class="diff-card text-center reveal">
+            <div
+              class="w-14 h-14 mx-auto mb-4 rounded-2xl bg-gradient-to-br from-studio-pink to-studio-lilac flex items-center justify-center text-studio-purple shadow-sm">
+              <i data-lucide="heart" class="w-7 h-7"></i>
+            </div>
+            <h3 class="font-bold text-sm sm:text-base text-studio-black mb-1">Atendimento acolhedor</h3>
+            <p class="text-xs text-studio-gray">Recepção calorosa e carinho do início ao fim.</p>
+          </div>
+
+          <div class="diff-card text-center reveal delay-100">
+            <div
+              class="w-14 h-14 mx-auto mb-4 rounded-2xl bg-gradient-to-br from-studio-pink to-studio-lilac flex items-center justify-center text-studio-purple shadow-sm">
+              <i data-lucide="shield-check" class="w-7 h-7"></i>
+            </div>
+            <h3 class="font-bold text-sm sm:text-base text-studio-black mb-1">Ambiente higienizado</h3>
+            <p class="text-xs text-studio-gray">Protocolos estritos de limpeza e desinfecção.</p>
+          </div>
+
+          <div class="diff-card text-center reveal delay-200">
+            <div
+              class="w-14 h-14 mx-auto mb-4 rounded-2xl bg-gradient-to-br from-studio-pink to-studio-lilac flex items-center justify-center text-studio-purple shadow-sm">
+              <i data-lucide="smile" class="w-7 h-7"></i>
+            </div>
+            <h3 class="font-bold text-sm sm:text-base text-studio-black mb-1">Profissionais atenciosos</h3>
+            <p class="text-xs text-studio-gray">Equipe capacitada e dedicada a ouvir suas preferências.</p>
+          </div>
+
+          <div class="diff-card text-center reveal delay-300">
+            <div
+              class="w-14 h-14 mx-auto mb-4 rounded-2xl bg-gradient-to-br from-studio-pink to-studio-lilac flex items-center justify-center text-studio-purple shadow-sm">
+              <i data-lucide="package-check" class="w-7 h-7"></i>
+            </div>
+            <h3 class="font-bold text-sm sm:text-base text-studio-black mb-1">Materiais descartáveis</h3>
+            <p class="text-xs text-studio-gray">Total segurança para serviços de unhas e manicures.</p>
+          </div>
+
+          <div class="diff-card text-center reveal delay-100">
+            <div
+              class="w-14 h-14 mx-auto mb-4 rounded-2xl bg-gradient-to-br from-studio-pink to-studio-lilac flex items-center justify-center text-studio-purple shadow-sm">
+              <i data-lucide="badge-percent" class="w-7 h-7"></i>
+            </div>
+            <h3 class="font-bold text-sm sm:text-base text-studio-black mb-1">Preços acessíveis</h3>
+            <p class="text-xs text-studio-gray">Serviço de alto padrão com custo honesto e justo.</p>
+          </div>
+
+          <div class="diff-card text-center reveal delay-200">
+            <div
+              class="w-14 h-14 mx-auto mb-4 rounded-2xl bg-gradient-to-br from-studio-pink to-studio-lilac flex items-center justify-center text-studio-purple shadow-sm">
+              <i data-lucide="gift" class="w-7 h-7"></i>
+            </div>
+            <h3 class="font-bold text-sm sm:text-base text-studio-black mb-1">Doações de cabelo</h3>
+            <p class="text-xs text-studio-gray">Ponto de coleta de mechas para causas solidárias.</p>
+          </div>
+
+          <div class="diff-card text-center reveal delay-300">
+            <div
+              class="w-14 h-14 mx-auto mb-4 rounded-2xl bg-gradient-to-br from-studio-pink to-studio-lilac flex items-center justify-center text-studio-purple shadow-sm">
+              <i data-lucide="rainbow" class="w-7 h-7"></i>
+            </div>
+            <h3 class="font-bold text-sm sm:text-base text-studio-black mb-1">Acolhe LGBTQ+</h3>
+            <p class="text-xs text-studio-gray">Espaço seguro, inclusivo, livre e respeitoso para todos.</p>
+          </div>
+
+          <div class="diff-card text-center reveal delay-400">
+            <div
+              class="w-14 h-14 mx-auto mb-4 rounded-2xl bg-gradient-to-br from-studio-pink to-studio-lilac flex items-center justify-center text-studio-purple shadow-sm">
+              <i data-lucide="wifi" class="w-7 h-7"></i>
+            </div>
+            <h3 class="font-bold text-sm sm:text-base text-studio-black mb-1">Wi-Fi & Comodidades</h3>
+            <p class="text-xs text-studio-gray">Wi-Fi gratuito, banheiro privativo e pagamento por NFC.</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================================================== -->
+    <!-- 6. AVALIAÇÕES / DEPOIMENTOS                        -->
+    <!-- ================================================== -->
+    <section class="py-20 lg:py-28 bg-studio-offwhite relative overflow-hidden" id="depoimentos"
+      aria-labelledby="depoimentos-heading">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <!-- Selo Google Reviews Oficial -->
+          <div
+            class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-white border border-studio-lilac shadow-sm mb-4 reveal">
+            <svg class="w-4 h-4" viewBox="0 0 24 24">
+              <path fill="#4285F4"
+                d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" />
+              <path fill="#34A853"
+                d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" />
+              <path fill="#FBBC05"
+                d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z" />
+              <path fill="#EA4335"
+                d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z" />
+            </svg>
+            <span class="text-xs font-bold text-studio-gray-dark">Avaliações Verificadas no Google</span>
+          </div>
+
+          <h2 id="depoimentos-heading"
+            class="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold text-studio-black mb-4 reveal delay-100">
+            O que nossas <span class="text-gradient">clientes dizem</span>
+          </h2>
+
+          <!-- Estatística 4.8 / 5 -->
+          <div class="flex items-center justify-center gap-3.5 reveal delay-200">
+            <div class="flex text-studio-gold">
+              <i data-lucide="star" class="w-6 h-6 fill-current"></i>
+              <i data-lucide="star" class="w-6 h-6 fill-current"></i>
+              <i data-lucide="star" class="w-6 h-6 fill-current"></i>
+              <i data-lucide="star" class="w-6 h-6 fill-current"></i>
+              <i data-lucide="star" class="w-6 h-6 fill-current"></i>
+            </div>
+            <div class="flex items-baseline gap-1.5">
+              <span class="font-heading text-3xl sm:text-4xl font-bold text-studio-black">4,8</span>
+              <span class="text-sm font-semibold text-studio-gray">/ 5 estrelas</span>
+              <span class="text-xs text-studio-purple font-medium ml-1">(41 avaliações reais)</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Carousel / Grid de Depoimentos Reais do SPEC -->
+        <div class="testimonial-wrapper">
+          <!-- Grid no Desktop (md:grid-cols-3) e Carrossel Deslizável com Snap no Mobile -->
+          <div
+            class="flex overflow-x-auto snap-x snap-mandatory md:grid md:grid-cols-3 gap-6 lg:gap-8 pb-4 md:pb-0 -mx-4 px-4 sm:mx-0 sm:px-0"
+            id="testimonialCarouselTrack" style="scrollbar-width: none; -ms-overflow-style: none;">
+
+            <!-- DEPOIMENTO 1: Rachel Dias -->
+            <div
+              class="min-w-[85vw] sm:min-w-[340px] md:min-w-0 snap-center testimonial-slide-box reveal delay-100 flex-shrink-0 md:flex-shrink"
+              data-slide-index="0">
+              <span class="testimonial-quote-mark">“</span>
+              <div class="flex text-studio-gold mb-4">
+                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              </div>
+              <p class="text-studio-gray-dark text-sm leading-relaxed mb-6 flex-1">
+                "Sou cliente há quase 8 anos, a Fabi é uma excelente profissional, amo a escova progressiva e a escova
+                normal dela, não tem igual em Santo Amaro. Ambiente muito higienizado, materiais todos descartáveis para
+                as unhas. Super recomendo!!"
+              </p>
+              <div class="flex items-center gap-3 pt-4 border-t border-studio-gray-light">
+                <div
+                  class="w-11 h-11 rounded-full bg-gradient-to-br from-studio-purple to-studio-purple-light flex items-center justify-center text-white font-bold text-sm shadow-sm">
+                  RD
+                </div>
+                <div>
+                  <h4 class="font-bold text-sm text-studio-black">Rachel Dias</h4>
+                  <p class="text-xs text-studio-gray">Cliente há quase 8 anos</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- DEPOIMENTO 2: Larissa Siqueira -->
+            <div
+              class="min-w-[85vw] sm:min-w-[340px] md:min-w-0 snap-center testimonial-slide-box reveal delay-200 flex-shrink-0 md:flex-shrink"
+              data-slide-index="1">
+              <span class="testimonial-quote-mark">“</span>
+              <div class="flex text-studio-gold mb-4">
+                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              </div>
+              <p class="text-studio-gray-dark text-sm leading-relaxed mb-6 flex-1">
+                "A Fabi é muito atenciosa, e as meninas também são maravilhosas. Me sinto muito bem quando estou lá, um
+                ambiente alto astral e com um ótimo serviço. Gratidão por ter conhecido esse espaço!"
+              </p>
+              <div class="flex items-center gap-3 pt-4 border-t border-studio-gray-light">
+                <div
+                  class="w-11 h-11 rounded-full bg-gradient-to-br from-studio-magenta to-studio-purple-light flex items-center justify-center text-white font-bold text-sm shadow-sm">
+                  LS
+                </div>
+                <div>
+                  <h4 class="font-bold text-sm text-studio-black">Larissa Siqueira</h4>
+                  <p class="text-xs text-studio-gray">Cliente satisfeita</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- DEPOIMENTO 3: Simone Maria -->
+            <div
+              class="min-w-[85vw] sm:min-w-[340px] md:min-w-0 snap-center testimonial-slide-box reveal delay-300 flex-shrink-0 md:flex-shrink"
+              data-slide-index="2">
+              <span class="testimonial-quote-mark">“</span>
+              <div class="flex text-studio-gold mb-4">
+                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              </div>
+              <p class="text-studio-gray-dark text-sm leading-relaxed mb-6 flex-1">
+                "Fabi, a dona do salão, é muito caprichosa! Faz o trabalho com excelência! O salão é acolhedor, preços
+                que cabem no bolso e um time de manicures excelente!"
+              </p>
+              <div class="flex items-center gap-3 pt-4 border-t border-studio-gray-light">
+                <div
+                  class="w-11 h-11 rounded-full bg-gradient-to-br from-studio-purple-dark to-studio-purple flex items-center justify-center text-white font-bold text-sm shadow-sm">
+                  SM
+                </div>
+                <div>
+                  <h4 class="font-bold text-sm text-studio-black">Simone Maria</h4>
+                  <p class="text-xs text-studio-gray">Cliente satisfeita</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Indicadores / Dots para navegação no Mobile -->
+          <div class="flex justify-center items-center gap-2 mt-5 md:hidden" id="testimonialDots">
+            <button class="w-3 h-3 rounded-full bg-studio-purple transition-all duration-300" data-slide="0"
+              aria-label="Ver depoimento 1"></button>
+            <button class="w-2.5 h-2.5 rounded-full bg-studio-lilac transition-all duration-300" data-slide="1"
+              aria-label="Ver depoimento 2"></button>
+            <button class="w-2.5 h-2.5 rounded-full bg-studio-lilac transition-all duration-300" data-slide="2"
+              aria-label="Ver depoimento 3"></button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================================================== -->
+    <!-- 7. CTA DE AGENDAMENTO COM GRADIENTE                -->
+    <!-- ================================================== -->
+    <section
+      class="py-20 lg:py-24 text-white relative overflow-hidden bg-gradient-to-br from-studio-purple-deep via-studio-purple-dark to-studio-purple"
+      aria-labelledby="cta-heading">
+      <!-- Decorações orgânicas de fundo -->
+      <div class="absolute -top-32 -left-32 w-80 h-80 rounded-full bg-white/10 blur-3xl pointer-events-none"></div>
+      <div
+        class="absolute -bottom-32 -right-32 w-96 h-96 rounded-full bg-studio-purple-light/20 blur-3xl pointer-events-none">
+      </div>
+
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+        <span
+          class="inline-block px-4 py-1.5 rounded-full bg-white/15 backdrop-blur-md text-studio-pink font-semibold text-xs tracking-wider uppercase mb-6 reveal">
+          Horários Recomendados com Antecedência
+        </span>
+
+        <h2 id="cta-heading" class="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 reveal delay-100">
+          Pronta para cuidar dos seus cabelos?
+        </h2>
+
+        <p class="text-base sm:text-lg text-white/90 max-w-2xl mx-auto leading-relaxed mb-10 reveal delay-200">
+          Agende seu horário com antecedência e venha viver uma experiência de beleza, cuidado e carinho no Studio Fabi.
+        </p>
+
+        <div class="flex flex-col sm:flex-row gap-4 justify-center items-center reveal delay-300">
+          <a href="https://wa.me/5511969239889?text=Ol%C3%A1%2C%20Studio%20Fabi!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio."
+            class="inline-flex items-center gap-3 bg-white text-studio-purple font-bold px-8 py-4 rounded-full text-base sm:text-lg shadow-2xl hover:bg-studio-offwhite hover:scale-105 transition-all duration-300"
+            target="_blank" rel="noopener noreferrer">
+            <i data-lucide="message-circle" class="w-5 h-5 text-studio-whatsapp"></i>
+            Agendar pelo WhatsApp
+          </a>
+          <a href="#contato"
+            class="inline-flex items-center gap-2 bg-transparent text-white border-2 border-white/60 font-semibold px-7 py-3.5 rounded-full text-base hover:bg-white/15 transition-all">
+            <i data-lucide="mail" class="w-4 h-4"></i>
+            Preencher Formulário
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================== -->
+    <!-- 8. LOCALIZAÇÃO / INFORMAÇÕES                       -->
+    <!-- ================================================== -->
+    <section class="py-20 lg:py-28 bg-white relative" id="localizacao" aria-labelledby="localizacao-heading">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <span class="inline-block text-xs font-semibold tracking-widest text-studio-purple uppercase mb-3 reveal">
+            Fácil Acesso em Santo Amaro
+          </span>
+          <h2 id="localizacao-heading"
+            class="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold text-studio-black mb-4 reveal delay-100">
+            Onde <span class="text-gradient">estamos</span>
+          </h2>
+          <p class="text-base sm:text-lg text-studio-gray reveal delay-200">
+            Venha nos visitar em um espaço planejado para o seu conforto no Jardim Promissão.
+          </p>
+        </div>
+
+        <div class="grid lg:grid-cols-12 gap-8 items-stretch max-w-6xl mx-auto">
+
+          <!-- Card de Informações e Contatos (5 cols) -->
+          <div
+            class="lg:col-span-5 bg-studio-offwhite rounded-3xl p-8 border border-studio-lilac/40 flex flex-col justify-between shadow-sm reveal-left">
+            <div>
+              <h3 class="font-heading text-2xl font-bold text-studio-black mb-6">Informações Úteis</h3>
+
+              <div class="space-y-6">
+                <!-- Endereço -->
+                <div class="flex items-start gap-4">
+                  <div
+                    class="w-12 h-12 rounded-2xl bg-studio-pink flex items-center justify-center flex-shrink-0 text-studio-purple shadow-sm">
+                    <i data-lucide="map-pin" class="w-6 h-6"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-sm text-studio-black">Endereço</h4>
+                    <p class="text-sm text-studio-gray leading-relaxed mt-0.5">
+                      R. Eng. Francisco Pitta Brito, 453<br>
+                      Jardim Promissão — Santo Amaro<br>
+                      São Paulo - SP, CEP: 04753-080
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Telefone / WhatsApp -->
+                <div class="flex items-start gap-4">
+                  <div
+                    class="w-12 h-12 rounded-2xl bg-studio-pink flex items-center justify-center flex-shrink-0 text-studio-purple shadow-sm">
+                    <i data-lucide="phone" class="w-6 h-6"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-sm text-studio-black">Telefone & WhatsApp</h4>
+                    <p class="text-sm text-studio-gray mt-0.5">(11) 96923-9889</p>
+                    <a href="https://wa.me/5511969239889"
+                      class="text-xs font-semibold text-studio-purple hover:underline" target="_blank"
+                      rel="noopener noreferrer">Conversar agora no WhatsApp</a>
+                  </div>
+                </div>
+
+                <!-- Horário de Atendimento -->
+                <div class="flex items-start gap-4">
+                  <div
+                    class="w-12 h-12 rounded-2xl bg-studio-pink flex items-center justify-center flex-shrink-0 text-studio-purple shadow-sm">
+                    <i data-lucide="clock" class="w-6 h-6"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-sm text-studio-black">Horário de Funcionamento</h4>
+                    <p class="text-sm text-studio-gray mt-0.5">Atendimento até 18:00</p>
+                    <span
+                      class="inline-block mt-1 px-2.5 py-0.5 rounded-full bg-studio-pink text-studio-purple text-xs font-semibold">
+                      É recomendado marcar hora
+                    </span>
+                  </div>
+                </div>
+
+                <!-- Formas de Pagamento & Comodidades -->
+                <div class="flex items-start gap-4">
+                  <div
+                    class="w-12 h-12 rounded-2xl bg-studio-pink flex items-center justify-center flex-shrink-0 text-studio-purple shadow-sm">
+                    <i data-lucide="credit-card" class="w-6 h-6"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-sm text-studio-black">Pagamento & Comodidades</h4>
+                    <p class="text-xs text-studio-gray leading-relaxed mt-0.5">
+                      Cartão de crédito, débito, NFC e cheque.<br>
+                      Wi-Fi gratuito e banheiro para clientes.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Botão Como Chegar -->
+            <div class="mt-8 pt-6 border-t border-studio-gray-light">
+              <a href="https://www.google.com/maps/search/R.+Eng.+Francisco+Pitta+Brito,+453+-+Jardim+Promiss%C3%A3o,+S%C3%A3o+Paulo+-+SP,+04753-080"
+                class="btn-primary w-full justify-center" target="_blank" rel="noopener noreferrer">
+                <i data-lucide="navigation" class="w-5 h-5"></i>
+                Abrir Rota no Google Maps
+              </a>
+            </div>
+          </div>
+
+          <!-- Mapa Responsivo Integrado (7 cols) -->
+          <div
+            class="lg:col-span-7 rounded-3xl overflow-hidden shadow-lg border border-studio-lilac/30 min-h-[380px] reveal-right">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.0594892408994!2d-46.717523924667234!3d-23.638069378747447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce510f274ea1e5%3A0xe54b9d5cbf23df1b!2sR.%20Eng.%20Francisco%20Pitta%20Brito%2C%20453%20-%20Jardim%20Promiss%C3%A3o%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2004753-080!5e0!3m2!1spt-BR!2sbr!4v1710000000000!5m2!1spt-BR!2sbr"
+              width="100%" height="100%" style="border:0; min-height: 420px;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Mapa de Localização do Studio Fabi em Santo Amaro"></iframe>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================================================== -->
+    <!-- 9. FORMULÁRIO DE CONTATO (WHATSAPP AUTOMÁTICO)     -->
+    <!-- ================================================== -->
+    <section class="py-20 lg:py-28 bg-studio-offwhite relative" id="contato" aria-labelledby="contato-heading">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <span class="inline-block text-xs font-semibold tracking-widest text-studio-purple uppercase mb-3 reveal">
+            Agendamento Rápido & Fácil
+          </span>
+          <h2 id="contato-heading"
+            class="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold text-studio-black mb-4 reveal delay-100">
+            Entre em <span class="text-gradient">contato</span>
+          </h2>
+          <p class="text-base sm:text-lg text-studio-gray reveal delay-200">
+            Preencha os dados abaixo para gerar sua mensagem personalizada e falar diretamente conosco no WhatsApp.
+          </p>
+        </div>
+
+        <div class="max-w-2xl mx-auto">
+          <form id="contactForm"
+            class="bg-white rounded-3xl p-8 sm:p-10 shadow-lg border border-studio-lilac/40 reveal delay-100"
+            novalidate>
+
+            <div class="grid sm:grid-cols-2 gap-5 mb-5">
+              <div>
+                <label for="nome" class="form-label-custom">Nome Completo *</label>
+                <input type="text" id="nome" name="nome" class="form-input-custom" placeholder="Ex: Maria Silva"
+                  required aria-required="true">
+                <span class="text-xs text-red-500 mt-1 hidden" id="error-nome">Por favor, informe seu nome.</span>
+              </div>
+              <div>
+                <label for="telefone" class="form-label-custom">Telefone / WhatsApp *</label>
+                <input type="tel" id="telefone" name="telefone" class="form-input-custom" placeholder="(11) 99999-9999"
+                  required aria-required="true">
+                <span class="text-xs text-red-500 mt-1 hidden" id="error-telefone">Informe um telefone válido.</span>
+              </div>
+            </div>
+
+            <div class="mb-5">
+              <label for="servico" class="form-label-custom">Serviço de Interesse *</label>
+              <select id="servico" name="servico" class="form-input-custom cursor-pointer" required
+                aria-required="true">
+                <option value="">Selecione um serviço desejado</option>
+                <option value="Escova">Escova</option>
+                <option value="Progressiva">Progressiva</option>
+                <option value="Botox Capilar">Botox Capilar</option>
+                <option value="Restauração Capilar">Restauração Capilar</option>
+                <option value="Banho de Colágeno">Banho de Colágeno</option>
+                <option value="Cauterização">Cauterização</option>
+                <option value="Hidratação">Hidratação</option>
+                <option value="Outro">Outro</option>
+              </select>
+              <span class="text-xs text-red-500 mt-1 hidden" id="error-servico">Selecione o serviço de interesse.</span>
+            </div>
+
+            <div class="grid sm:grid-cols-2 gap-5 mb-5">
+              <div>
+                <label for="data" class="form-label-custom">Data Desejada</label>
+                <input type="date" id="data" name="data" class="form-input-custom">
+              </div>
+              <div>
+                <label for="horario" class="form-label-custom">Horário Desejado</label>
+                <input type="time" id="horario" name="horario" class="form-input-custom">
+              </div>
+            </div>
+
+            <div class="mb-6">
+              <label for="mensagem" class="form-label-custom">Mensagem ou Dúvida (Opcional)</label>
+              <textarea id="mensagem" name="mensagem" rows="4" class="form-input-custom"
+                placeholder="Ex: Gostaria de saber valores e disponibilidade para esta semana..."></textarea>
+            </div>
+
+            <button type="submit" class="btn-primary btn-shimmer w-full justify-center text-base py-4" id="submitBtn">
+              <i data-lucide="message-circle" class="w-5 h-5 text-studio-whatsapp"></i>
+              Enviar pelo WhatsApp
+            </button>
+
+            <div class="flex items-center justify-center gap-2 text-xs text-studio-gray text-center mt-4">
+              <i data-lucide="lock" class="w-3.5 h-3.5 text-studio-purple"></i>
+              <span>Seus dados são usados exclusivamente para estruturar a mensagem do WhatsApp.</span>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ================================================== -->
+  <!-- 10. FOOTER                                         -->
+  <!-- ================================================== -->
+  <footer class="bg-studio-black text-studio-gray-light py-16 lg:py-20 border-t border-studio-gray-dark"
+    role="contentinfo">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-12 gap-10 mb-14">
+
+        <!-- Logo e Apresentação (5 cols) -->
+        <div class="md:col-span-5">
+          <!-- Logo com fundo branco contido -->
+          <div class="inline-block bg-white rounded-xl p-3 mb-5">
+            <img src="assets/logo.jpg" alt="Studio Fabi" class="h-12 w-auto object-contain">
+          </div>
+          <p class="text-sm font-semibold text-white tracking-wide uppercase mb-2">Studio Fabi — Salão de Cabeleireiro
+          </p>
+          <p class="text-sm text-studio-gray max-w-sm leading-relaxed mb-4">
+            Beleza, cuidado e autoestima em cada detalhe. Cabelos tratados com produtos profissionais de alta
+            performance.
+          </p>
+          <p class="text-xs text-studio-gray">
+            R. Eng. Francisco Pitta Brito, 453 — Jardim Promissão, São Paulo - SP<br>
+            Telefone: (11) 96923-9889
+          </p>
+        </div>
+
+        <!-- Links de Navegação (3 cols) -->
+        <div class="md:col-span-3">
+          <h3 class="font-heading text-lg font-bold text-white mb-4">Navegação Rápida</h3>
+          <nav aria-label="Navegação do rodapé" class="space-y-2.5">
+            <a href="#inicio"
+              class="block text-sm text-studio-gray hover:text-studio-lilac transition-colors">Início</a>
+            <a href="#sobre" class="block text-sm text-studio-gray hover:text-studio-lilac transition-colors">Sobre
+              Nós</a>
+            <a href="#servicos"
+              class="block text-sm text-studio-gray hover:text-studio-lilac transition-colors">Serviços</a>
+            <a href="#diferenciais"
+              class="block text-sm text-studio-gray hover:text-studio-lilac transition-colors">Diferenciais</a>
+            <a href="#depoimentos"
+              class="block text-sm text-studio-gray hover:text-studio-lilac transition-colors">Avaliações de
+              Clientes</a>
+            <a href="#localizacao" class="block text-sm text-studio-gray hover:text-studio-lilac transition-colors">Onde
+              Estamos</a>
+            <a href="#contato"
+              class="block text-sm text-studio-gray hover:text-studio-lilac transition-colors">Contato</a>
+          </nav>
+        </div>
+
+        <!-- Contato & Agendamento (4 cols) -->
+        <div class="md:col-span-4">
+          <h3 class="font-heading text-lg font-bold text-white mb-4">Agende seu Horário</h3>
+          <p class="text-sm text-studio-gray mb-5 leading-relaxed">
+            Recomendamos agendar com antecedência para garantir o melhor atendimento para o seu momento.
+          </p>
+          <a href="https://wa.me/5511969239889?text=Ol%C3%A1%2C%20Studio%20Fabi!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio."
+            class="btn-whatsapp-nav inline-flex" target="_blank" rel="noopener noreferrer">
+            <i data-lucide="message-circle" class="w-4 h-4"></i>
+            Agendar pelo WhatsApp
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Linha divisória de copyright -->
+      <div
+        class="border-t border-studio-gray-dark/60 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-studio-gray">
+        <p>© 2026 Studio Fabi. Todos os direitos reservados.</p>
+        <p>Salão de Cabeleireiro em São Paulo — SP</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================================================== -->
+  <!-- 11. BOTÃO FLUTUANTE DO WHATSAPP COM TOOLTIP        -->
+  <!-- ================================================== -->
+  <a href="https://wa.me/5511969239889?text=Ol%C3%A1%2C%20Studio%20Fabi!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio."
+    class="whatsapp-float animate-pulse-subtle" id="whatsappFloat" target="_blank" rel="noopener noreferrer"
+    aria-label="Agende seu horário pelo WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="currentColor">
+      <path
+        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+    </svg>
+    <span class="whatsapp-tooltip">Agende pelo WhatsApp</span>
+  </a>
+
+  <!-- Popup Balão Interativo de Notificação da Fabi -->
+  <div id="whatsappPopupBadge" class="whatsapp-floating-popup" style="display: none;">
+    <button id="closeWhatsappPopup" aria-label="Fechar mensagem" class="popup-close-btn">&times;</button>
+    <div class="flex items-center gap-2 mb-1">
+      <span class="w-2.5 h-2.5 rounded-full bg-studio-whatsapp animate-ping"></span>
+      <span class="text-xs font-bold text-studio-black">Fabiola está online</span>
+    </div>
+    <p class="text-xs text-studio-gray leading-snug">Olá! Deseja tirar dúvidas ou agendar um horário com a gente? ✨</p>
+  </div>
+
+  <!-- ================================================== -->
+  <!-- 12. TOAST NOTIFICATION                             -->
+  <!-- ================================================== -->
+  <div class="toast-box" id="toastBox" role="status" aria-live="polite">
+    <div
+      class="w-8 h-8 rounded-full bg-studio-whatsapp/20 flex items-center justify-center text-studio-whatsapp flex-shrink-0">
+      <i data-lucide="check" class="w-5 h-5"></i>
+    </div>
+    <div>
+      <p class="text-sm font-bold text-studio-black">Mensagem estruturada!</p>
+      <p class="text-xs text-studio-gray">Abrindo o WhatsApp em instantes...</p>
+    </div>
+  </div>
+
+  <!-- ================================================== -->
+  <!-- 13. JAVASCRIPT EXTERNO                                -->
+  <!-- ================================================== -->
+  <script src="js/script.js"></script>
+</body>
+
+</html>
